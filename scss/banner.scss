@@ -1,0 +1,68 @@
+.banner{
+  .row{
+    h1,span,.btn{
+      color: #fff;
+    }
+    .banner-leader-text{
+      font-weight: 100;
+      margin-bottom: 7px;
+      display: inline-block;
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+}
+.hesperiden.tparrows{
+  background: transparent !important;
+  display: none;
+  font-weight: normal;
+}
+.tp-leftarrow::before{
+  content:"\f104" !important;
+  font-family: "FontAwesome" !important;
+  font-size: 40px !important;
+}
+.tp-rightarrow::before{
+  content:"\f105" !important;
+  font-family: "FontAwesome" !important;
+  font-size: 40px !important;
+}
+@media screen and (min-width:528px) {
+  .banner br{
+    display: block !important;
+  }
+}
+@media screen and (min-width:576px) {
+  .banner{
+    .row{
+      .banner-leader-text{
+        font-size:17px;
+      }
+    }
+  }
+}
+@media screen and (min-width:768px) {
+  .banner{
+    .row{
+      .banner-leader-text{
+        font-size:18px;
+      }
+    }
+  }
+  .hesperiden.tparrows{
+    display: block;
+  }
+}
+@media screen and (min-width:992px) {
+  .banner{
+    .row{
+      .banner-leader-text{
+        font-size:20px;
+      }
+
+    }
+  }
+}
+@media screen and (min-width:1200px) {
+
+}

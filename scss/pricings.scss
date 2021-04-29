@@ -1,0 +1,49 @@
+$color1:#f35873;
+$color2:#34acbe;
+
+.pricing-item{
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  text-align: center;
+  border-radius: 4px;
+  .pricing-header{
+    padding: 30px 0;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 25px;
+    position: relative;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  .pricing-header::before{
+    position: absolute;
+    content: "";
+    background: transparent;
+    border: 19px solid transparent;
+    bottom: -38px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .dollar{
+    vertical-align: super;
+    font-size: 25px;
+    font-weight: normal;
+    margin-right: -6px;
+  }
+}
+.pricing-item.color1{
+  .pricing-header{
+    background: $color1;
+  }
+  .pricing-header::before{
+    border-top: 20px solid $color1;
+  }
+}
+.pricing-item.color2{
+  .pricing-header{
+    background: $color2;
+  }
+  .pricing-header::before{
+    border-top: 20px solid $color2;
+  }
+}
